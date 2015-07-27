@@ -11838,162 +11838,66 @@ h2,
 /* RCUE Styles */
 /* Bootstrap overrides */
 /* RCUE-specific */
+.main {
+  background: #ffffff;
+  -webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, 0.175);
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.175);
+  padding: 1px 20px;
+  margin-left: -40px;
+}
 .navbar-brand img {
   margin: 1px 0;
 }
-.fh-app-stream a {
-  color: #555555;
+.navbar-pf-lg .navbar-brand {
+  padding: 12px 0;
 }
-.fh-app-stream a:hover {
-  text-decoration: none;
-  cursor: pointer;
+.navbar-pf-lg .navbar-utility > li > a {
+  padding-top: 12px;
+  padding-bottom: 12px;
 }
-.fh-app-stream a:hover .fh-app-stream-icon {
-  background: #00618a;
+.navbar-pf-lg .navbar-utility li.dropdown > .dropdown-toggle .pficon-user {
+  top: 12px;
 }
-.fh-app-stream a:hover .media-heading {
+.nav-sidebar a {
+  display: block;
+}
+.nav-sidebar a span {
+  display: inline-block;
+  width: 10px;
+  margin-right: 10px;
+  line-height: 40px;
+}
+.nav-sidebar a.active {
+  background: #eeeeee;
   color: #00618a;
 }
-.fh-app-stream .media {
-  border-bottom: 1px solid #eeeeee;
-  display: block;
-  margin: 0;
-  padding: 10px 0;
-  position: relative;
+.nav-sidebar ul a {
+  padding-left: 30px!important;
+  line-height: 30px;
 }
-.fh-app-stream .media p {
-  margin: 0;
+.nav-sidebar ul ul a {
+  padding-left: 50px!important;
 }
-.fh-app-stream .media:last-child {
-  border: none;
-  padding-bottom: 0;
-}
-.fh-app-stream .media:first-child {
-  padding-top: 0;
-}
-.fh-app-stream .media:first-child .media-body ul {
-  top: 0px;
-}
-.fh-app-stream .media-heading {
-  color: #0099d3;
-}
-.fh-app-stream .fh-app-stream-details {
-  position: absolute;
-  right: 0;
-  top: 10px;
-}
-@media (max-width: 767px) {
-  .fh-app-stream .fh-app-stream-details {
-    display: none !important;
-  }
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .fh-app-stream .fh-app-stream-details {
-    display: none !important;
-  }
-}
-.fh-app-stream .fh-app-stream-details li {
-  text-align: center;
-  font-size: 22px;
-  line-height: 1;
-  border-left: 1px solid #eeeeee;
-  padding: 0 15px;
-}
-.fh-app-stream .fh-app-stream-details li strong {
-  margin-top: 10px;
-  display: block;
+.nav-sidebar ul .nav-header a {
   font-size: 12px;
-  font-weight: normal;
 }
-.fh-app-stream .fh-app-stream-analitycs {
-  clear: both;
-  margin-top: 1px;
-  color: #999999;
+.nav-sidebar ul .nav-header a span {
+  line-height: 30px;
+}
+.nav-header > a {
+  line-height: 40px;
+  padding: 0 10px !important;
+  font-size: 15px;
+}
+.page-header {
+  margin-top: 30px;
+}
+.page-header h2 {
+  margin-top: 0;
+}
+.breadcrumb {
+  margin-top: 20px;
   margin-bottom: 0;
-  background: #fafafa;
-  padding: 0 5px;
-  border-radius: 1px;
-}
-.fh-app-stream .fh-app-stream-icon {
-  display: block;
-  background-color: #0099d3;
-  color: rgba(255, 255, 255, 0.9);
-  font-size: 30px;
-  font-weight: lighter;
-  line-height: 50px;
-  text-align: center;
-  width: 50px;
-  border-radius: 1px;
-}
-.list-group {
-  border: none;
-  padding: 0px;
-  margin-top: -10px;
-}
-.list-group .list-group-item {
-  padding: 10px;
-  margin: 0;
-  border-top: 0;
-}
-.list-group .list-group-item:last-child {
-  border: 0px solid black;
-}
-.list-group .list-group-item .list-group-item-heading {
-  font-size: 12px;
-}
-.fh-sidebar {
-  position: absolute;
-  top: 92px;
-  right: 0;
-  bottom: 0;
-  background: #fff;
-  margin-top: -20px;
-  height: auto;
-  border-left: none!important;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.175);
-}
-@media (min-width: 768px) and (max-width: 991px) {
-  .fh-sidebar {
-    display: none !important;
-  }
-}
-@media (max-width: 767px) {
-  .fh-sidebar {
-    display: none !important;
-  }
-}
-.fh-main-title {
-  background: #fff;
-  border-bottom: 1px solid #d1d1d1;
-  margin: -20px -20px 20px -20px;
-  padding: 20px;
-  z-index: 0;
-}
-.fh-main-title h1 {
-  margin: 0;
-  padding: 0;
-  line-height: 17px;
-  font-size: 20px;
-}
-.card-pf-title-action {
-  position: absolute;
-  right: 25px;
-  top: 16px;
-}
-.spark {
-  margin: -5px;
-}
-.spark img {
-  width: 100%;
-  margin: -10px 0 -5px 0;
-}
-.fh-event-list .media {
   border-bottom: 1px solid #eeeeee;
-}
-.fh-event-list .media-heading {
-  font-weight: 600;
-  margin: 0 0 2px 0;
-}
-.fh-event-list .media-left {
-  font-size: 16px;
+  padding-bottom: 20px;
 }

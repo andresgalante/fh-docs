@@ -17,187 +17,94 @@
 //  display: none!important;
 // }
 
+.main{
+  background: @card-pf-bg-color;
+  .box-shadow(0 1px 1px rgba(0,0,0,.175));
+  padding: 1px @grid-gutter-width/2;
+  margin-left: -@grid-gutter-width;
 
-
+}
 .navbar-brand img{
   margin: 1px 0;
 }
 
 
-
-// media custom =====================================================
-
-.fh-app-stream{
-  
-.media-left,
-.media > .pull-left {
-//  padding-right: 20px;
-}
-
-  a{
-    color: @gray;
-    &:hover{
-      text-decoration: none;
-      cursor: pointer;
-      .fh-app-stream-icon{
-        background: @link-hover-color;
-      }
-      .media-heading{
-        color:  @link-hover-color;
-      }
-    }
-  }
-  
-  .media{
-    border-bottom: 1px solid @gray-lighter;
-    display: block;
-    margin: 0;
-    padding: 10px 0;
-    position: relative;
-    p{
-      margin: 0;
-    }
-    &:last-child{
-      border: none;
-      padding-bottom: 0;
-    }
-    &:first-child{
-      padding-top: 0;
-      .media-body ul{
-      top: 0px;
-      }      
-    }
-  }
-  
-  .media-heading{
-    color:  @link-color;
-  }
-  
-  
-  .fh-app-stream-details{
-      .hidden-xs;
-      .hidden-sm;
-      position: absolute;
-      right: 0;
-      top: 10px;
-    li{
-      text-align: center;
-      font-size: @font-size-h2;
-      line-height: 1;
-      border-left: 1px solid @gray-lighter;
-      padding: 0 15px;
-      strong{
-        margin-top: 10px;
-        display: block;
-        font-size: @font-size-base;
-        font-weight: normal;
-      }
-    }
-  }
-  
-  .fh-app-stream-analitycs{
-    clear: both;
-    margin-top: 1px;
-    color: @gray-light;
-    margin-bottom: 0;
-    background: #fafafa;
-    padding: 0 5px;
-    border-radius: @border-radius-base;
-  }
-  
-  .fh-app-stream-icon{
-    display:block;
-    background-color: @link-color; 
-    color: rgba(255,255,255,.9);
-    font-size: @font-size-base * 2.5;
-    font-weight: lighter;
-    line-height: 50px;
-    text-align: center;
-    width: 50px;
-    border-radius: @border-radius-base;
+.navbar-pf-lg{
+  .navbar-brand {
+    padding: 12px 0;
   }  
-  
-  
-}// ups media stream
-
-
-
-.list-group{  
-  border: none;
-  padding: 0px;
-  margin-top: -10px;
-  .list-group-item{
-    padding: 10px;
-    margin: 0;  
-    border-top: 0;
-    &:last-child{
-      border: 0px solid black;
+  .navbar-utility {
+    > li > a {
+      padding-top: 12px;
+      padding-bottom: 12px;
     }
-    &:first-child{
+    li.dropdown > .dropdown-toggle {
+      .pficon-user {
+        top: 12px;
+      }
+    }    
+  }  
+}
+
+
+
+.nav-sidebar{
+//  border-right: 1px solid @gray-lighter;
+  a{
+    display: block;
+    span{
+//      .pull-right;
+      display: inline-block;
+      width: 10px;
+      margin-right: 10px;
+      line-height: 40px;
     }
-    .list-group-item-heading{
-      font-size: @font-size-base;    
+  &.active{
+    background: @gray-lighter;
+    color: @link-hover-color;
+    }
+  }
+ 
+  ul{
+    a{
+      padding-left: 30px!important;
+      line-height: 30px;
+    }
+    ul a{
+      padding-left: 50px!important;
+    }
+    .nav-header{
+      a{
+        font-size: @font-size-base;
+        span{
+          line-height: 30px;
+        }
+      }
     }
   }
 }
 
-
-.fh-sidebar{
-  position: absolute;
-  top: 92px;
-  right: 0;
-  bottom: 0;
-  background: #fff;
-  margin-top: -20px;
-  height: auto;
-  border-left: none!important;
-  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.175);
-  .hidden-sm;
-  .hidden-xs;
+.nav-header>a{
+//  font-weight: bold;
+  line-height: 40px;
+  padding: 0 10px !important;
+  font-size: @font-size-h4;
 }
 
 
-.fh-main-title{
-  background: #fff;
-  border-bottom: 1px solid #d1d1d1;
-  margin: -20px -20px 20px -20px;
-  padding: 20px;
-//  box-shadow: 0 0px 1px rgba(0, 0, 0, 0.175);
-  z-index: 0;
-//  display: none;
-  h1{
-    margin: 0;
-    padding: 0;
-    line-height: 17px;
-    font-size: 20px;
-  }
-
-}
-
-  .card-pf-title-action{
-    position: absolute;
-    right: 25px;
-    top: 16px;
-  }
-  
-.spark{
-  margin: -5px;
-  img{
-    width: 100%;
-    margin: -10px 0 -5px 0;
+.page-header{
+  margin-top: 30px;
+  h2{
+    margin-top: 0;
   }
 }
 
 
-.fh-event-list{
-  .media{
-    border-bottom: 1px solid @gray-lighter;
-  }
-  .media-heading{
-    font-weight: 600;
-    margin: 0 0 2px 0;
-  }
-  .media-left{
-    font-size: @font-size-h3;
-  }
+
+.breadcrumb{
+  margin-top: 20px;
+  margin-bottom: 0;
+//  font-size: @font-size-h4;
+  border-bottom: 1px solid @gray-lighter;
+  padding-bottom: 20px;
 }
